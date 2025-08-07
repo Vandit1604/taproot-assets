@@ -484,6 +484,13 @@
   Add sell-side constraint rejection unit tests for
   TestResolveRequest.
 
+- [PR#1694](https://github.com/lightninglabs/taproot-assets/pull/1694)
+  Add a CI sanity job that runs a small subset of itests (mint +
+  send/receive) against an `lnd` backend in remote-signing (watch-only)
+  mode, paired with a separate signer `lnd` node. Guards against
+  regressions in tapd's support for watch-only `lnd` deployments while
+  keeping CI cost low.
+
 ## Database
 
 - [forwards table](https://github.com/lightninglabs/taproot-assets/pull/1921):
